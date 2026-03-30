@@ -1,0 +1,17 @@
+# PlatformIO
+.pio/
+.pio-home/
+
+# Python venv
+.venv/
+
+# VS Code
+.vscode/
+
+# Other
+.codex
+*.bin
+*.elf
+*.map
+*.tmp
+.DS_Store
