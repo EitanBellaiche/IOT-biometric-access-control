@@ -1,0 +1,66 @@
+# Secure Biometric Smart Lock
+
+An IoT-based smart lock system built with ESP32, combining biometric authentication and remote access control.
+
+---
+
+## Features
+
+- Fingerprint-based authentication  
+- Remote unlocking via Blynk mobile application  
+- Relay-controlled 12V electric lock  
+- WiFi-enabled real-time communication  
+- Automatic lock timeout mechanism  
+- Non-blocking system logic using millis()
+
+---
+
+## System Architecture
+
+- ESP32 (main controller)  
+- Fingerprint sensor (UART communication)  
+- Relay module (controls high voltage circuit)  
+- Electric solenoid lock (12V)  
+- Blynk Cloud and mobile application  
+
+---
+
+## How It Works
+
+### Fingerprint Access
+
+1. The user places a finger on the sensor  
+2. The ESP32 captures and processes the fingerprint  
+3. If a match is found, access is granted  
+4. The relay is activated  
+5. The lock opens for a few seconds  
+6. The lock closes automatically  
+
+### Remote Access
+
+1. The user presses a button in the mobile application  
+2. The command is sent through the Blynk Cloud  
+3. The ESP32 receives the signal  
+4. The lock opens remotely  
+
+---
+
+## Technologies Used
+
+- ESP32 (WiFi-enabled microcontroller)  
+- Arduino framework (C++)  
+- Blynk IoT platform  
+- UART communication  
+- Embedded systems programming  
+
+---
+
+## Security Considerations
+
+- Biometric authentication replaces physical keys  
+- Remote access is controlled through an authenticated cloud platform  
+- The device is not directly exposed to the public internet  
+
+---
+
+## Project Structure
